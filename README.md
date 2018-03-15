@@ -2,8 +2,16 @@
 
 Go to your marketplace root directory (ie. `marketplace-example`) and install module:
 
-    npm i @platform-os/blog
+    npm i @platform-os/longtail-api
 
-Include the generated partial into your code:
+Include `longtail/widget_links` to the homepage and listing show page.
 
-    {% include "google-analytics/ga" %}
+You can use the code below:
+
+    <div id="longtail-widget-home">
+        <div class="container">
+            <ul id="longtail-links">
+                {% include 'longtail/widget_links' %}
+            </ul>
+        </div>
+    </div>
